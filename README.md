@@ -154,15 +154,16 @@ Create your app following [this guide](https://developers.ringcentral.com/guide/
 
 Use Heroku deploy button on the top to do initial deployment. Then link your repository with Heroku for future deployments using `git push heroku {branch}`.
 
-Note: you can do the initial deployment with all environment variables as dummy strings.
+Note: For environment variables, you may ignore APP_SERVER and ASSETS_PATH for initial deployment and fill in later.
 
 ## Environment Variables
 
-After the initial deployment, we can easily get full info on environment variables.
+After the initial deployment, we can easily get full info on environment variables. Go to Heroku app setting page and update them accordingly:
 
+- APP_SERVER: your heroku app domain
+- ASSETS_PATH: if you host client under server itself, then it's {APP_SERVER}/client. Otherwise fill in the address of your own host
 
-
-More Info:
+## More Info
 
 - [Heroku Button](https://devcenter.heroku.com/articles/heroku-button)
 - This template is configured with [Heroku Postgres](https://devcenter.heroku.com/articles/heroku-postgresql)
