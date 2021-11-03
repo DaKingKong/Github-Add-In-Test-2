@@ -26,5 +26,5 @@ exports.appExtend = (app) => {
   app.post(constants.route.forThirdParty.INTERACTIVE_MESSAGE, notificationRoute.interactiveMessages);
   
   // static host client code
-  app.use('/client', express.static(__dirname + '/public'));
+  app.use('/client', express.static(__dirname + '/client'));
 }

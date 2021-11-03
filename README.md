@@ -154,6 +154,14 @@ Create your app following [this guide](https://developers.ringcentral.com/guide/
 
 Use Heroku deploy button on the top to do initial deployment. Then link your repository with Heroku for future deployments using `git push heroku {branch}`.
 
+Note: you can do the initial deployment with all environment variables as dummy strings.
+
+## Environment Variables
+
+After the initial deployment, we can easily get full info on environment variables.
+
+
+
 More Info:
 
 - [Heroku Button](https://devcenter.heroku.com/articles/heroku-button)
